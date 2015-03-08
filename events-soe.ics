@@ -6,16 +6,16 @@ BEGIN:VEVENT
 SUMMARY:Creativity and Cognition in Computational Media
 DTSTART;TZID=US/Pacific;VALUE=DATE-TIME:20150311T110000
 DTEND;TZID=US/Pacific;VALUE=DATE-TIME:20150311T120000
-DTSTAMP;VALUE=DATE-TIME:20150307T143627Z
-UID:benjaminran@soeevents20150307143627
+DTSTAMP;VALUE=DATE-TIME:20150308T000728Z
+UID:benjaminran@soeevents20150308000728
 DESCRIPTION: \nhttps://www.soe.ucsc.edu/events/event/3816
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Building Data-Centric Applications for Smart Devices
 DTSTART;TZID=US/Pacific;VALUE=DATE-TIME:20150313T110000
 DTEND;TZID=US/Pacific;VALUE=DATE-TIME:20150313T120000
-DTSTAMP;VALUE=DATE-TIME:20150307T143628Z
-UID:benjaminran@soeevents20150307143628
+DTSTAMP;VALUE=DATE-TIME:20150308T000730Z
+UID:benjaminran@soeevents20150308000730
 DESCRIPTION:Personal smart devices have become ubiquitous. Millions of inn
  ovative apps run on our tablets\, smart phones\, and smart watches\, bring
  ing these devices to life. Whether the app provides photo sharing\, heart-
@@ -37,16 +37,16 @@ SUMMARY:Exploring\, Enhancing\, and Understanding the Social and Emotional
   Palette of Games and Play
 DTSTART;TZID=US/Pacific;VALUE=DATE-TIME:20150313T110000
 DTEND;TZID=US/Pacific;VALUE=DATE-TIME:20150313T120000
-DTSTAMP;VALUE=DATE-TIME:20150307T143629Z
-UID:benjaminran@soeevents20150307143629
+DTSTAMP;VALUE=DATE-TIME:20150308T000731Z
+UID:benjaminran@soeevents20150308000731
 DESCRIPTION: \nhttps://www.soe.ucsc.edu/events/event/3815
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Attacking The Browser
 DTSTART;TZID=US/Pacific;VALUE=DATE-TIME:20150318T110000
 DTEND;TZID=US/Pacific;VALUE=DATE-TIME:20150318T120000
-DTSTAMP;VALUE=DATE-TIME:20150307T143630Z
-UID:benjaminran@soeevents20150307143630
+DTSTAMP;VALUE=DATE-TIME:20150308T000732Z
+UID:benjaminran@soeevents20150308000732
 DESCRIPTION:The browser has evolved from a simple program that displays 
  static web pages to a continuously changing platform that has become our p
  ortal to the Internet.The fierce competition among the browser vendo

@@ -17,7 +17,7 @@ DISCRIMINATE_SUMMARIES = True # require non-empty summary?
 
 ####    Script constants/variables
 BASE_URL = "https://www.soe.ucsc.edu"
-CALENDAR_NAME = "events-soe.ics"
+CALENDAR_NAME = "/var/www/html/calendar/soe.ics"
 UID = "benjaminran@soeevents"
 calendar = None
 
