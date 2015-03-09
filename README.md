@@ -1,6 +1,6 @@
 # SOE Event Scraper
 
-Scripts to create an icalendar feed from events listed UCSC's engineering department website.
+Program to create an icalendar feed from events listed UCSC's engineering department website.
 
 
 ## Overview
