@@ -13,11 +13,11 @@ from time import mktime
 
 ####    Options
 DISCRIMINATE_SUMMARIES = True # require non-empty summary?
-
+VERBOSE = False # verbose output?
 
 ####    Script constants/variables
 BASE_URL = "https://www.soe.ucsc.edu"
-CALENDAR_NAME = "/var/www/html/calendar/soe.ics"
+CALENDAR_NAME = "/home/ubuntu/public_html/calendar/soe.ics"
 UID = "benjaminran@soeevents"
 calendar = None
 
@@ -27,9 +27,13 @@ calendar = None
 def make_calendar():
     global calendar
     calendar = Calendar()
-    calendar.add('prodid', 'bran//soeevents//python//')
+    calendar.add('prodid', '-//bran//soeevents//EN')
     calendar.add('version', '2.0')
+    calendar.add('calscale', 'GREGORIAN')
     calendar.add('method', 'PUBLISH')
+    calendar.add('x-wr-calname', "SoE Events - UCSC")
+    calendar.add('x-wr-timezone', 'America/Los_Angeles')
+    calendar.add('x-wr-caldesc', "UCSC Engineering department events")
 
 def save_calendar():
     f = open(CALENDAR_NAME, 'wb')
@@ -65,10 +69,10 @@ def soup_to_event(soup, url):
         else: summary += abstract + "\n"
     summary += url
     add_event(title, summary, start_time)
-    print(title)
-    print(summary)
-    print(start_time)
-    print('\n')
+    print("adding event: " + title)
+    if VERBOSE: print(summary)
+    if VERBOSE: print(start_time)
+    if VERBOSE: print('\n')
     return True
 
 def find_title(soup):
@@ -115,6 +119,7 @@ def read_event_recur(url):
 
 ##      Main
 if __name__ == '__main__':
+    print("soe_events.py: executing at " + datetime.now().strftime("%I:%M %p on %A %B %d, %Y (UTC)"))
     make_calendar()
     read_event_recur(get_first_url())
     save_calendar()
