@@ -69,7 +69,7 @@ def soup_to_event(soup, url):
         else: summary += abstract + "\n"
     summary += url
     add_event(title, summary, start_time)
-    print("adding event: " + title)
+    print("event: " + title)
     if VERBOSE: print(summary)
     if VERBOSE: print(start_time)
     if VERBOSE: print('\n')
