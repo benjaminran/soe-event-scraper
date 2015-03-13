@@ -12,7 +12,7 @@ from time import mktime
 
 
 ####    Options
-DISCRIMINATE_SUMMARIES = True # require non-empty summary?
+DISCRIMINATE_SUMMARIES = False # require non-empty summary?
 VERBOSE = False # verbose output?
 
 ####    Script constants/variables
