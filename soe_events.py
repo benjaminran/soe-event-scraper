@@ -39,7 +39,7 @@ def save_calendar():
     f = open(CALENDAR_NAME, 'wb')
     f.write(calendar.to_ical())
     f.close()
-    print("Wrote calendar to " + CALENDAR_NAME)
+    print("wrote calendar to " + CALENDAR_NAME)
 
 def add_event(title, summary, start):
     end = start + timedelta(hours=1)
